@@ -10,7 +10,7 @@ export default class Users extends BaseSchema {
       table.string('email').unique()
       table.string('password')
       table.string('cpf').unique()
-      table.timestamps(true)
+      table.timestamps()
     })
   }
 

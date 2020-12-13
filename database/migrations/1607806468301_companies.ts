@@ -9,7 +9,7 @@ export default class Companies extends BaseSchema {
       table.string('company_name').notNullable()
       table.string('cnpj').notNullable()
       table.string('url').notNullable()
-      table.timestamps(true)
+      table.timestamps()
     })
   }
 

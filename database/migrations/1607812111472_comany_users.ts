@@ -13,7 +13,7 @@ export default class CompanyUser extends BaseSchema {
         .inTable('companies')
         .onDelete('CASCADE')
       table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE')
-      table.timestamps(true)
+      table.timestamps()
     })
   }
 
